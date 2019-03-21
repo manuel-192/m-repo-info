@@ -56,5 +56,3 @@ You can see what gpg keys you have installed with:
 ```
 gpg --list-keys --keyid-format LONG
 ```
-## Final words
-Don't forget to enjoy!
