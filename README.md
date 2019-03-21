@@ -50,8 +50,8 @@ If not, check that the added key was correct.
 
 That's it! The hard part is done, and now the new repos are available for your package manager.
 
-## Last but not least
-Update your repos and packages:
+## Update your system
+Last but not least, update your repos and packages:
 ```
 sudo pacman -Syyu
 ```
