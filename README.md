@@ -12,7 +12,7 @@ The following three steps
 1. install a gpg key
 1. update system
 
-show how to get started with the repos.
+show how to start using the repos.
 
 ## Edit /etc/pacman.conf
 Add all (or a selection) of the following repo definitions:
