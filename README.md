@@ -1,11 +1,11 @@
 # Instructions to set up the Manuel's repos
 Currently there are three repos available:
 
-Name | Purpose
----- | -------
-antergos-m | Packages created by Manuel
-antergos-maur | A selection of AUR packages
-antergos-mup | Packages to update some Antergos packages
+Name | Purpose | Link
+---- | ------- | ----
+antergos-m | Packages created by Manuel | [antergos-m](../antergos-m)
+antergos-maur | A selection of AUR packages | [antergos-m](../antergos-maur)
+antergos-mup | Packages to update some Antergos packages | [antergos-m](../antergos-mup)
 
 The following instructions show how to get started with the repos.
 
