@@ -4,8 +4,8 @@ Currently there are three repos available:
 Name | Purpose
 ---- | -------
 antergos-m | Packages created by Manuel
-antergos-mup | Packages to update some Antergos packages
 antergos-maur | A selection of AUR packages
+antergos-mup | Packages to update some Antergos packages
 
 The following instructions show how to get started with the repos.
 
