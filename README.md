@@ -13,7 +13,7 @@ The following instructions show how to get started with the repos.
 Add all (or a selection) of the following repo definitions:
 ```
 # Prebuilt and up to date AUR packages for Antergos.
-# Place this before the [antergos] repo definition since these packages replace
+# Place this before the [antergos] repo definition since these packages are meant to replace
 # matching packages of the Antergos repo.
 [antergos-mup]
 Server = https://github.com/manuel-192/antergos-mup/raw/master
