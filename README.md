@@ -40,6 +40,9 @@ Run the following commands (unless you haven't already done so):
 sudo pacman-key --recv-keys A1F1B5187D25904B
 sudo pacman-key --lsign-key A1F1B5187D25904B
 ```
+You should see token **manuel-192** inside the output of the these last commands.
+If not, check that the key was correctly added.
+
 That's it! The hard part is done, and now the new repos are available for your package manager.
 ## Last but not least
 Update your repos system system:
@@ -47,3 +50,8 @@ Update your repos system system:
 sudo pacman -Syyu
 ```
 This command should show also the new package database files (that you added) including the corresponding \<database\>.sig file.
+<br><br>
+In case of any error, please check that you have copied the repo definitions exactly as they are above. And check that the imported gpg key was correct.
+<br><br>
+And don't forget to enjoy!
+
