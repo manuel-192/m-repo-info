@@ -9,7 +9,7 @@ antergos-mup | Packages to update some Antergos packages | [antergos-mup](../../
 
 The following three steps
 1. edit /etc/pacman.conf
-1. install gpg keys
+1. install a gpg key
 1. update system
 
 show how to get started with the repos.
