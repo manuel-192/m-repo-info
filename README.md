@@ -1,4 +1,4 @@
-# Instructions to set up Manuel's repos
+# Instructions to use Manuel's repos
 Currently there are three repos available:
 
 Name | Purpose | Link
