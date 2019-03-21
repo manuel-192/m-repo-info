@@ -1,4 +1,11 @@
 # Instructions to set up the all Manuel's repos
+Currently there are three repos available:
+Name | Purpose
+----   -------
+antergos-m | Packages created by Manuel
+antergos-mup | Packages to update some Antergos packages
+antergos-maur | A selection of AUR packages
+
 ## Edit /etc/pacman.conf
 Add all or selected of the following repo definitions:
 ```
