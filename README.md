@@ -34,7 +34,7 @@ Server = https://github.com/manuel-192/antergos-maur/raw/master
 SigLevel = Required
 ```
 ## Add the maintainer's gpg key to your system
-but only if you trust the maintainer and these packages!<br>
+but only if you trust the maintainer and these packages!<br><br>
 Run the following commands (unless you haven't already done so):
 ```
 sudo pacman-key --recv-keys A1F1B5187D25904B
