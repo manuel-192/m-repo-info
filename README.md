@@ -40,7 +40,7 @@ Run the following commands (unless you haven't already done so):
 sudo pacman-key --recv-keys A1F1B5187D25904B
 sudo pacman-key --lsign-key A1F1B5187D25904B
 ```
-That's it! Now the new packages are available for you. Use pacman or similar tools to manage them.
+That's it! The hard part is done, and now the new packages are available for your package manager.
 ## Last but not least
 Update your repos system system:
 ```
