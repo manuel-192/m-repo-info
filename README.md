@@ -50,11 +50,11 @@ Update your repos and packages:
 sudo pacman -Syyu
 ```
 This command should show also the new package database files (that you added) including the corresponding \<database\>.sig file.
-<br><br>
+## Troubleshooting
 In case of any error, please check that you have copied the repo definitions exactly as they are above. And check that the imported gpg key was correct.<br>
 You can see what gpg keys you have installed with:
 ```
 gpg --list-keys --keyid-format LONG
 ```
-And don't forget to enjoy!
-
+## Final words
+Don't forget to enjoy!
