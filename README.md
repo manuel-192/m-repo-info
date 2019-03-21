@@ -7,6 +7,8 @@ antergos-m | Packages created by Manuel
 antergos-mup | Packages to update some Antergos packages
 antergos-maur | A selection of AUR packages
 
+The following instructions show how to get started with the repos.
+
 ## Edit /etc/pacman.conf
 Add all or selected of the following repo definitions:
 ```
