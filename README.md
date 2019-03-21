@@ -1,5 +1,5 @@
 # Instructions to set up the Manuel's repos
-[See also](../../../antergos-m/raw/master/README.md)
+[See also](../../../antergos-m/blob/master/README.md)
 Currently there are three repos available:
 
 Name | Purpose
