@@ -3,23 +3,25 @@
 ### Edit /etc/pacman.conf
 Add all or selected of the following repo definitions:
 ```
+# Prebuilt and up to date AUR packages for Antergos.
+# Place this before the [antergos] repo definition since these packages replace
+# matching packages of the Antergos repo.
+[antergos-mup]
+Server = https://github.com/manuel-192/antergos-mup/raw/master
+SigLevel = Required
+
+
 # Packages created and published by Manuel.
 # Place this in the end of the file since its packages shouldn't conflict with other repos.
 [antergos-m]
 Server = https://github.com/manuel-192/antergos-m/raw/master
 SigLevel = Required
 
+
 # Selection of prebuilt packages from AUR.
 # Place this in the end of the file since its packages shouldn't conflict with other repos.
 [antergos-maur]
 Server = https://github.com/manuel-192/antergos-maur/raw/master
-SigLevel = Required
-
-# Prebuilt and up to date AUR packages for Antergos.
-# Place this before the [antergos] repo definition since these packages replace
-# matching packages of the Antergos repo.
-[antergos-mup]
-Server = https://github.com/manuel-192/antergos-mup/raw/master
 SigLevel = Required
 ```
 ### Add the maintainer's gpg key to your system (but only if you trust these packages!)
