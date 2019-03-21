@@ -3,9 +3,9 @@ Currently there are three repos available:
 
 Name | Purpose | Link
 ---- | ------- | ----
-antergos-m | Packages created by Manuel | [antergos-m](../antergos-m)
-antergos-maur | A selection of AUR packages | [antergos-maur](../antergos-maur)
-antergos-mup | Packages to update some Antergos packages | [antergos-mup](../antergos-mup)
+antergos-m | Packages created by Manuel | [antergos-m](https://github.com/manuel-192/antergos-m)
+antergos-maur | A selection of AUR packages | [antergos-maur](https://github.com/manuel-192/antergos-maur)
+antergos-mup | Packages to update some Antergos packages | [antergos-mup](https://github.com/manuel-192/antergos-mup)
 
 The following instructions show how to get started with the repos.
 
