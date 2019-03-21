@@ -1,7 +1,7 @@
 # antergos-common-repo-info
 ## Instructions to set up the all Manuel's repos
 ### Edit /etc/pacman.conf
-Add all or selected repo definitions:
+Add all or selected of the following repo definitions:
 ```
 # Packages created and published by Manuel.
 # Place this in the end of the file since its packages shouldn't conflict with other repos.
