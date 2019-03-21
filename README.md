@@ -56,3 +56,4 @@ You can see what gpg keys you have installed with:
 ```
 gpg --list-keys --keyid-format LONG
 ```
+You may write to https://forum.antergos.com about any issues with these repos.
