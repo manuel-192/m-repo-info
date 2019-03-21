@@ -10,7 +10,7 @@ antergos-mup | Packages to update some Antergos packages
 The following instructions show how to get started with the repos.
 
 ## Edit /etc/pacman.conf
-Add all or selected of the following repo definitions:
+Add all (or a selection) of the following repo definitions:
 ```
 # Prebuilt and up to date AUR packages for Antergos.
 # Place this before the [antergos] repo definition since these packages replace
