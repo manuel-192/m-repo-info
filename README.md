@@ -7,7 +7,12 @@ antergos-m | Packages created by Manuel | [antergos-m](../../../antergos-m)
 antergos-maur | A selection of AUR packages | [antergos-maur](../../../antergos-maur)
 antergos-mup | Packages to update some Antergos packages | [antergos-mup](../../../antergos-mup)
 
-The following instructions show how to get started with the repos.
+The following three steps
+1. edit /etc/pacman.conf
+1. install gpg keys
+1. update system
+
+show how to get started with the repos.
 
 ## Edit /etc/pacman.conf
 Add all (or a selection) of the following repo definitions:
@@ -44,6 +49,7 @@ You should see token **manuel-192** inside the output of the these last commands
 If not, check that the added key was correct.
 
 That's it! The hard part is done, and now the new repos are available for your package manager.
+
 ## Last but not least
 Update your repos and packages:
 ```
