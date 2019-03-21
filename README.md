@@ -42,7 +42,11 @@ sudo pacman-key --lsign-key A1F1B5187D25904B
 ```
 You should see token **manuel-192** inside the output of the these last commands.
 If not, check that the added key was correct.
-
+<br>
+You can see what gpg keys you have installed with:
+```
+gpg --list-keys --keyid-format LONG
+```
 That's it! The hard part is done, and now the new repos are available for your package manager.
 ## Last but not least
 Update your repos and packages:
