@@ -36,3 +36,4 @@ Update your repos system system:
 ```
 sudo pacman -Syyu
 ```
+This command should show also the new package database files (that you added) including the corresponding <database>.sig file.
