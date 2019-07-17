@@ -26,13 +26,15 @@ Server = https://github.com/manuel-192/antergos-mup/raw/master
 SigLevel = Required
 
 # Packages created and published by Manuel.
-# Place this repo preferably in the end of the file since these packages shouldn't conflict with other repos.
+# Place this repo preferably in the end of the file since these packages
+# shouldn't conflict with other repos.
 [antergos-m]
 Server = https://github.com/manuel-192/antergos-m/raw/master
 SigLevel = Required
 
 # Selection of prebuilt packages from AUR.
-# Place this repo preferably in the end of the file since these packages shouldn't conflict with other repos.
+# Place this repo preferably in the end of the file since these packages
+# shouldn't conflict with other repos.
 [antergos-maur]
 Server = https://github.com/manuel-192/antergos-maur/raw/master
 SigLevel = Required
