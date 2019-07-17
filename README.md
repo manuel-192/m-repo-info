@@ -1,11 +1,12 @@
 # Instructions for using Manuel's repos
-Currently there are three repos available:
+Currently there are the following repos available:
 
 Name | Purpose | Link
 ---- | ------- | ----
 antergos-m | Packages created by Manuel | [antergos-m](../../../antergos-m)
 antergos-maur | A selection of AUR packages | [antergos-maur](../../../antergos-maur)
 antergos-mup | Packages to update some Antergos packages | [antergos-mup](../../../antergos-mup)
+m-more | Some larger packages | [m-more](../../../m-more)
 
 The following three steps
 1. edit /etc/pacman.conf
@@ -24,18 +25,21 @@ Add all (or a selection) of the following repo definitions:
 Server = https://github.com/manuel-192/antergos-mup/raw/master
 SigLevel = Required
 
-
 # Packages created and published by Manuel.
 # Place this repo preferably in the end of the file since these packages shouldn't conflict with other repos.
 [antergos-m]
 Server = https://github.com/manuel-192/antergos-m/raw/master
 SigLevel = Required
 
-
 # Selection of prebuilt packages from AUR.
 # Place this repo preferably in the end of the file since these packages shouldn't conflict with other repos.
 [antergos-maur]
 Server = https://github.com/manuel-192/antergos-maur/raw/master
+SigLevel = Required
+
+# Some larger packages.
+[m-more]
+Server = https://github.com/manuel-192/m-more/releases/download/1
 SigLevel = Required
 ```
 ## Add the maintainer's gpg key to your system
