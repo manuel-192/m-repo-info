@@ -41,7 +41,7 @@ SigLevel = Required
 
 # Some larger packages.
 [m-more]
-Server = https://github.com/manuel-192/m-more/releases/download/1
+Server = https://github.com/manuel-192/m-more/releases/download/mirror
 SigLevel = Required
 ```
 ## Add the maintainer's gpg key to your system
