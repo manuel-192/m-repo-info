@@ -6,7 +6,7 @@ Name | Purpose | Link
 antergos-m | Packages created by Manuel | [antergos-m](../../../antergos-m)
 antergos-maur | A selection of AUR packages | [antergos-maur](../../../antergos-maur)
 antergos-mup | Packages to update some Antergos packages | [antergos-mup](../../../antergos-mup)
-m-more | Some larger packages | [m-more](../../../m-more)
+m-more | Selection of the above and more | [m-more](../../../m-more)
 
 The following three steps
 1. edit /etc/pacman.conf
@@ -39,7 +39,7 @@ SigLevel = Required
 Server = https://github.com/manuel-192/antergos-maur/raw/master
 SigLevel = Required
 
-# Some larger packages.
+# m-more contains a selection of the above and some more packages.
 [m-more]
 Server = https://github.com/manuel-192/m-more/releases/download/mirror
 SigLevel = Required
