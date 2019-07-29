@@ -1,4 +1,10 @@
 # Instructions for using Manuel's repos
+
+## Latest changes
+- 2019-07-29: IMPORTANT: changed SigLevel of each repo from **Required** to **PackageRequired**.<br>
+  You MUST make the same change in your /etc/pacman.conf.<br>
+  This was due to inadequate support from pacman for database signatures.
+
 Currently there are the following repos available:
 
 Name | Purpose | Link
@@ -23,26 +29,26 @@ Add all (or a selection) of the following repo definitions:
 # matching packages of the Antergos repo.
 [antergos-mup]
 Server = https://github.com/manuel-192/antergos-mup/raw/master
-SigLevel = Required
+SigLevel = PackageRequired
 
 # Packages created and published by Manuel.
 # Place this repo preferably in the end of the file since these packages
 # shouldn't conflict with other repos.
 [antergos-m]
 Server = https://github.com/manuel-192/antergos-m/raw/master
-SigLevel = Required
+SigLevel = PackageRequired
 
 # Selection of prebuilt packages from AUR.
 # Place this repo preferably in the end of the file since these packages
 # shouldn't conflict with other repos.
 [antergos-maur]
 Server = https://github.com/manuel-192/antergos-maur/raw/master
-SigLevel = Required
+SigLevel = PackageRequired
 
 # m-more contains a selection of the above and some more packages.
 [m-more]
 Server = https://github.com/manuel-192/m-more/releases/download/mirror
-SigLevel = Required
+SigLevel = PackageRequired
 ```
 ## Add the maintainer's gpg key to your system
 but only if you trust the maintainer and these packages!<br><br>
