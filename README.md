@@ -32,6 +32,7 @@ Add all (or a selection) of the following repo definitions (note: removed obsole
 # Place this repo preferably in the end of the file since these packages
 # shouldn't conflict with other repos.
 [m-more]
+#Include = /etc/pacman.d/manuel-mirrorlist
 Server = https://github.com/manuel-192/$repo/releases/download/assets
 SigLevel = PackageRequired
 
@@ -39,9 +40,17 @@ SigLevel = PackageRequired
 # Place this repo preferably in the end of the file since these packages
 # shouldn't conflict with other repos.
 [antergos-m]
+#Include = /etc/pacman.d/manuel-mirrorlist
 Server = https://github.com/manuel-192/$repo/releases/download/assets
 SigLevel = PackageRequired
 ```
+Note that you may also write a mirrorlist file with the following contents:
+```
+# contents of file /etc/pacman.d/manuel-mirrorlist:
+Server = https://github.com/manuel-192/$repo/releases/download/assets
+```
+and uncomment the "#Include = ..." lines from the repo definitions above.
+
 ## Add the maintainer's gpg key to your system
 but only if you trust the maintainer and these packages!<br><br>
 Run the following commands (unless you haven't already done so):
