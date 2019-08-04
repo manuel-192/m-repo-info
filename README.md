@@ -1,6 +1,7 @@
 # Instructions for using Manuel's repos
 
 ## Latest changes
+- 2019-08-04: Antergos users may find a new home at endeavouros.com. Many Antergos users have moved there.
 - 2019-08-04: IMPORTANT: repos are now under construction due to Antergos shutdown.
   This means any repo can be changed to another place or even be totally removed.
   Please continue looking at this page for more info in the near future!
