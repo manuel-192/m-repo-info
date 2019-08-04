@@ -68,7 +68,7 @@ Last but not least, update your repos and packages:
 ```
 sudo pacman -Syyu
 ```
-This command should show also the new package database files (that you added).
+This command should show also the new package database files that you added.
 ## Troubleshooting
 In case of any error, please check that you have copied the repo definitions exactly as they are above. And check that the installed gpg key was correct.<br>
 You can see what gpg keys you have installed with:
