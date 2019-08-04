@@ -50,6 +50,7 @@ Note that you may also write a mirrorlist file with the following contents:
 Server = https://github.com/manuel-192/$repo/releases/download/assets
 ```
 and uncomment the "#Include = ..." lines from the repo definitions above.
+Then you no more need the "Server = ..." line for those repos either.
 
 ## Add the maintainer's gpg key to your system
 but only if you trust the maintainer and these packages!<br><br>
