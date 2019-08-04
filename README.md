@@ -1,6 +1,8 @@
 # Instructions for using Manuel's repos
 
 ## Latest changes
+- 2019-08-04: repos are now under construction. This means any repo can be changed to another place
+  or even be totally removed. Please look at this page for more info in the near future!
 - 2019-07-29: IMPORTANT: changed SigLevel of each repo from **Required** to **PackageRequired**.<br>
   You MUST make the same change in your /etc/pacman.conf.<br>
   This was due to inadequate support from pacman for database signatures.
