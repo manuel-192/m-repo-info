@@ -15,7 +15,7 @@ Name | Purpose | Link | Status
 ---- | ------- | ---- | ------
 m-more | Selection of AUR packages and more | [m-more](../../../m-more) | changing mirror
 antergos-m | Packages created by Manuel | [antergos-m](../../../antergos-m) | changing name and mirror
-antergos-maur | A selection of AUR packages | [antergos-maur](../../../antergos-maur) | to be removed soon
+antergos-maur | A selection of AUR packages | [antergos-maur](../../../antergos-maur) | removed
 antergos-mup | Packages to update some Antergos packages | [antergos-mup](../../../antergos-mup) | removed
 
 The following three steps
