@@ -1,8 +1,9 @@
 # Instructions for using Manuel's repos
 
 ## Latest changes
-- 2019-08-04: repos are now under construction. This means any repo can be changed to another place
-  or even be totally removed. Please look at this page for more info in the near future!
+- 2019-08-04: IMPORTANT: repos are now under construction due to Antergos shutdown.
+  This means any repo can be changed to another place or even be totally removed.
+  Please continue looking at this page for more info in the near future!
 - 2019-07-29: IMPORTANT: changed SigLevel of each repo from **Required** to **PackageRequired**.<br>
   You MUST make the same change in your /etc/pacman.conf.<br>
   This was due to inadequate support from pacman for database signatures.
@@ -10,47 +11,35 @@
 ## Overview
 Currently there are the following repos available:
 
-Name | Purpose | Link
----- | ------- | ----
-antergos-m | Packages created by Manuel | [antergos-m](../../../antergos-m)
-antergos-maur | A selection of AUR packages | [antergos-maur](../../../antergos-maur)
-antergos-mup | Packages to update some Antergos packages | [antergos-mup](../../../antergos-mup)
-m-more | Selection of the above and more | [m-more](../../../m-more)
+Name | Purpose | Link | Status
+---- | ------- | ---- | ------
+m-more | Selection of AUR packages and more | [m-more](../../../m-more) | changing mirror
+antergos-m | Packages created by Manuel | [antergos-m](../../../antergos-m) | changing name and mirror
+antergos-maur | A selection of AUR packages | [antergos-maur](../../../antergos-maur) | to be removed soon
+antergos-mup | Packages to update some Antergos packages | [antergos-mup](../../../antergos-mup) | removed
 
 The following three steps
 1. edit /etc/pacman.conf
-1. install a gpg key
-1. update system
+2. install a gpg key
+3. update system
 
-show how to start using the repos.
+show you how to start using the repos.
 
 ## Edit /etc/pacman.conf
-Add all (or a selection) of the following repo definitions:
+Add all (or a selection) of the following repo definitions (note: removed obsolete repos):
 ```
-# Prebuilt and up to date AUR packages for Antergos.
-# Place this before the [antergos] repo definition since these packages are meant to replace
-# matching packages of the Antergos repo.
-[antergos-mup]
-Server = https://github.com/manuel-192/antergos-mup/raw/master
+# Selection of prebuilt AUR packages and more.
+# Place this repo preferably in the end of the file since these packages
+# shouldn't conflict with other repos.
+[m-more]
+Server = https://github.com/manuel-192/$repo/releases/download/assets
 SigLevel = PackageRequired
 
 # Packages created and published by Manuel.
 # Place this repo preferably in the end of the file since these packages
 # shouldn't conflict with other repos.
 [antergos-m]
-Server = https://github.com/manuel-192/antergos-m/raw/master
-SigLevel = PackageRequired
-
-# Selection of prebuilt packages from AUR.
-# Place this repo preferably in the end of the file since these packages
-# shouldn't conflict with other repos.
-[antergos-maur]
-Server = https://github.com/manuel-192/antergos-maur/raw/master
-SigLevel = PackageRequired
-
-# m-more contains a selection of the above and some more packages.
-[m-more]
-Server = https://github.com/manuel-192/m-more/releases/download/mirror
+Server = https://github.com/manuel-192/$repo/releases/download/assets
 SigLevel = PackageRequired
 ```
 ## Add the maintainer's gpg key to your system
