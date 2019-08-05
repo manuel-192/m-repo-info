@@ -16,7 +16,7 @@ Currently there are the following repos available:
 Name | Purpose | Link | Status
 ---- | ------- | ---- | ------
 m-more | Selection of AUR packages and more | [m-more](../../../m-more) | changing mirror
-antergos-m | Packages created by Manuel | [m-m](../../../m-m) | changing name and mirror
+m-m | Packages created by Manuel | [m-m](../../../m-m) | changed name and mirror
 antergos-maur | A selection of AUR packages | [antergos-maur](../../../antergos-maur) | removed
 antergos-mup | Packages to update some Antergos packages | [antergos-mup](../../../antergos-mup) | removed
 
