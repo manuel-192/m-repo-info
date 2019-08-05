@@ -1,6 +1,7 @@
 # Instructions for using Manuel's repos
 
 ## Latest changes
+- 2019-08-05: Repo [antergos-m] has moved to [m-m].
 - 2019-08-04: Antergos users may find a new home at https://endeavouros.com. Many Antergos users have already moved there.
 - 2019-08-04: IMPORTANT: repos are now under construction due to Antergos shutdown.
   This means any repo can be changed to another place or even be totally removed.
@@ -15,7 +16,7 @@ Currently there are the following repos available:
 Name | Purpose | Link | Status
 ---- | ------- | ---- | ------
 m-more | Selection of AUR packages and more | [m-more](../../../m-more) | changing mirror
-antergos-m | Packages created by Manuel | [antergos-m](../../../antergos-m) | changing name and mirror
+antergos-m | Packages created by Manuel | [m-m](../../../m-m) | changing name and mirror
 antergos-maur | A selection of AUR packages | [antergos-maur](../../../antergos-maur) | removed
 antergos-mup | Packages to update some Antergos packages | [antergos-mup](../../../antergos-mup) | removed
 
@@ -40,7 +41,7 @@ SigLevel = PackageRequired
 # Packages created and published by Manuel.
 # Place this repo preferably in the end of the file since these packages
 # shouldn't conflict with other repos.
-[antergos-m]
+[m-m]
 #Include = /etc/pacman.d/manuel-mirrorlist
 Server = https://github.com/manuel-192/$repo/releases/download/assets
 SigLevel = PackageRequired
