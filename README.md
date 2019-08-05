@@ -19,6 +19,7 @@ m-more | Selection of AUR packages and more | [m-more](../../../m-more) | changi
 m-m | Packages created by Manuel | [m-m](../../../m-m) | changed name and mirror
 antergos-maur | A selection of AUR packages | [antergos-maur](../../../antergos-maur) | removed
 antergos-mup | Packages to update some Antergos packages | [antergos-mup](../../../antergos-mup) | removed
+antergos-m | Packages created by Manuel | [antergos-m](../../../antergos-m) | removed
 
 The following three steps
 1. edit /etc/pacman.conf
