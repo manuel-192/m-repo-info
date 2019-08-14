@@ -79,7 +79,7 @@ You can see what gpg keys you have installed with:
 ```
 gpg --list-keys --keyid-format LONG
 ```
-You may write to https://forum.antergos.com about any issues with these repos.
+You may write to https://forum.endeavouros.com about any issues with these repos.
 <br><br>
 <b>DISCLAIMER</b>: <u>use these packages at your own risk!</u> I have no way of
 guaranteeing the safety of these packages.
