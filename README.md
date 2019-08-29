@@ -1,6 +1,7 @@
 # Instructions for using Manuel's repos
 
 ## Latest changes
+- 2019-08-29: Renamed repo server addresses so that the "assets" word in the is now "x86_64".
 - 2019-08-05: Repo [antergos-m] has moved to [m-m].
 - 2019-08-04: Antergos users may find a new home at https://endeavouros.com. Many Antergos users have already moved there.
 - 2019-08-04: IMPORTANT: repos are now under construction due to Antergos shutdown.
@@ -36,7 +37,7 @@ Add all (or a selection) of the following repo definitions (note: removed obsole
 # shouldn't conflict with other repos.
 [m-more]
 #Include = /etc/pacman.d/manuel-mirrorlist
-Server = https://github.com/manuel-192/$repo/releases/download/assets
+Server = https://github.com/manuel-192/$repo/releases/download/x86_64
 SigLevel = PackageRequired
 
 # Packages created and published by Manuel.
@@ -44,13 +45,13 @@ SigLevel = PackageRequired
 # shouldn't conflict with other repos.
 [m-m]
 #Include = /etc/pacman.d/manuel-mirrorlist
-Server = https://github.com/manuel-192/$repo/releases/download/assets
+Server = https://github.com/manuel-192/$repo/releases/download/x86_64
 SigLevel = PackageRequired
 ```
 Note that you may also write a mirrorlist file with the following contents:
 ```
 # contents of file /etc/pacman.d/manuel-mirrorlist:
-Server = https://github.com/manuel-192/$repo/releases/download/assets
+Server = https://github.com/manuel-192/$repo/releases/download/x86_64
 ```
 and uncomment the "#Include = ..." lines from the repo definitions above.<br>
 Then you no more need the "Server = ..." line for those repos either.
