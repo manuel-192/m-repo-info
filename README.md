@@ -1,7 +1,7 @@
 # Instructions for using Manuel's repos
 
 ## Latest changes
-- 2019-08-29: Renamed repo server addresses so that the "assets" word in the is now "x86_64".
+- 2019-08-29: Renamed repo server addresses so that the "assets" word in the end is now "x86_64".
 - 2019-08-05: Repo [antergos-m] has moved to [m-m].
 - 2019-08-04: Antergos users may find a new home at https://endeavouros.com. Many Antergos users have already moved there.
 - 2019-08-04: IMPORTANT: repos are now under construction due to Antergos shutdown.
