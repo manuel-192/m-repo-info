@@ -27,7 +27,7 @@ The following three steps
 show you how to start using the repos.
 
 ## Edit /etc/pacman.conf
-Add all (or a selection) of the following repo definitions (note: removed obsolete repos):
+Add all (or a selection) of the following repo definitions:
 ```
 # Place the following repo definitions preferably in the end of the file since these packages
 # shouldn't conflict with other repos.
