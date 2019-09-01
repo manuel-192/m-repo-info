@@ -18,9 +18,6 @@ Name | Purpose | Link | Status
 ---- | ------- | ---- | ------
 m-more | Selection of AUR packages and more | [m-more](../../../m-more) | changed mirror
 m-m | Packages created by Manuel | [m-m](../../../m-m) | changed mirror
-antergos-maur | A selection of AUR packages | [antergos-maur](../../../antergos-maur) | removed
-antergos-mup | Packages to update some Antergos packages | [antergos-mup](../../../antergos-mup) | removed
-antergos-m | Packages created by Manuel | [antergos-m](../../../antergos-m) | removed
 
 The following three steps
 1. edit /etc/pacman.conf
@@ -32,30 +29,17 @@ show you how to start using the repos.
 ## Edit /etc/pacman.conf
 Add all (or a selection) of the following repo definitions (note: removed obsolete repos):
 ```
-# Selection of prebuilt AUR packages and more.
-# Place this repo preferably in the end of the file since these packages
+# Place the following repo definitions preferably in the end of the file since these packages
 # shouldn't conflict with other repos.
+
+# Selection of prebuilt AUR packages and more:
 [m-more]
-#Include = /etc/pacman.d/manuel-mirrorlist
 Server = https://github.com/manuel-192/$repo/releases/download/$arch
-SigLevel = PackageRequired
 
-# Packages created and published by Manuel.
-# Place this repo preferably in the end of the file since these packages
-# shouldn't conflict with other repos.
+# Packages created and published by Manuel:
 [m-m]
-#Include = /etc/pacman.d/manuel-mirrorlist
-Server = https://github.com/manuel-192/$repo/releases/download/$arch
-SigLevel = PackageRequired
-```
-Note that you may also write a mirrorlist file with the following contents:
-```
-# contents of file /etc/pacman.d/manuel-mirrorlist:
 Server = https://github.com/manuel-192/$repo/releases/download/$arch
 ```
-and uncomment the "#Include = ..." lines from the repo definitions above.<br>
-Then you no more need the "Server = ..." line for those repos either.
-
 ## Add the maintainer's gpg key to your system
 but only if you trust the maintainer and these packages!<br><br>
 Run the following commands (unless you haven't already done so):
