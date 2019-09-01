@@ -14,10 +14,10 @@
 ## Overview
 Currently there are the following repos available:
 
-Name | Purpose | Link | Status
----- | ------- | ---- | ------
-m-more | Selection of AUR packages and more | [m-more](../../../m-more) | stable
-m-m | Packages created by Manuel | [m-m](../../../m-m) | stable
+Name | Purpose | Link | Special remarks
+---- | ------- | ---- | ---------------
+m-more | Selection of AUR packages and more | [m-more](../../../m-more) | -
+m-m | Packages created by Manuel | [m-m](../../../m-m) | -
 
 The following three steps
 1. edit /etc/pacman.conf
