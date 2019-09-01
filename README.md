@@ -16,8 +16,8 @@ Currently there are the following repos available:
 
 Name | Purpose | Link | Status
 ---- | ------- | ---- | ------
-m-more | Selection of AUR packages and more | [m-more](../../../m-more) | changed mirror
-m-m | Packages created by Manuel | [m-m](../../../m-m) | changed mirror
+m-more | Selection of AUR packages and more | [m-more](../../../m-more) | stable
+m-m | Packages created by Manuel | [m-m](../../../m-m) | stable
 
 The following three steps
 1. edit /etc/pacman.conf
