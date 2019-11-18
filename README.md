@@ -25,7 +25,7 @@ The following three steps
 3. update system
 
 show you how to start using the repos.<br><br>
-Note: there's a small script *install-mirrorlist* that adds Manuel's repositories to your system. You may use it with these commands:
+Note: you can now use a small script to add Manuel's repositories to your system:
 <pre>
 wget -q https://github.com/manuel-192/m-more/raw/master/PKGBUILDs/mirrorlist-m/install-mirrorlist
 bash install-mirrorlist
