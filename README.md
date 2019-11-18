@@ -24,7 +24,12 @@ The following three steps
 2. install a gpg key
 3. update system
 
-show you how to start using the repos.
+show you how to start using the repos.<br><br>
+Note: there's a small script *install-mirrorlist* that adds Manuel's repositories to your system. You may use it with these commands:
+<pre>
+wget -q https://github.com/manuel-192/m-more/raw/master/PKGBUILDs/mirrorlist-m/install-mirrorlist
+bash install-mirrorlist
+</pre>
 
 ## Edit /etc/pacman.conf
 Add all (or a selection) of the following repo definitions:
