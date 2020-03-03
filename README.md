@@ -1,7 +1,7 @@
 # Instructions for using Manuel's repos
 
 ## Latest changes
-- 2020-03-03: New mirror address is https://github.com/manuel-192/$repo/raw/master/repo. Old address still works for now.
+- 2020-03-03: New mirror address is https://github.com/manuel-192/$repo/raw/master/repo. Old address still works, but is already outdated.
 - 2019-11-18: Manuel's repos can now be added with a script, see the <b>Overview</b> below.
 - 2019-08-29: IMPORTANT: Renamed repo server addresses so that the "assets" word in the end is now "$arch".
 - 2019-08-05: Repo [antergos-m] has moved to [m-m].
