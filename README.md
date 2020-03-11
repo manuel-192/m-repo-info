@@ -42,10 +42,12 @@ Add all (or a selection) of the following repo definitions:
 
 # Selection of prebuilt AUR packages and more:
 [m-more]
+SigLevel = Required
 Server = https://github.com/manuel-192/$repo/releases/download/$arch
 
 # Packages created and published by Manuel:
 [m-m]
+SigLevel = Required
 Server = https://github.com/manuel-192/$repo/releases/download/$arch
 ```
 ## Add the maintainer's gpg key to your system
