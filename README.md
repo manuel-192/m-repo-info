@@ -76,7 +76,7 @@ sudo pacman -S mirrorlist-m
 ```
 ## Final touch
 Remove the comment character (#) from the Include line(s) as noted above.<br>
-Also, you may want to remove the **Server** line for the [m-m] and [m-more].<br>
+Also, you *should* remove the **Server** line for the [m-m] and [m-more].<br>
 Then both repos should have lines looking like this:
 ```
 SigLevel = Required
