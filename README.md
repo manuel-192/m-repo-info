@@ -1,6 +1,7 @@
 # Instructions for using Manuel's repos
 
 ## Latest changes
+- 2020-03-24: updated the instruction below, please check them! IMPORTANT: If you don't have package **mirrorlist-m** installed, please install it as instructed!
 - 2020-03-24: The new mirror address is https://github.com/manuel-192/$repo/raw/master/repo is deprecated and will be removed soon. Address https://github.com/manuel-192/$repo/releases/download/$arch still works and will work.
 - 2020-03-10: New development in github tools made it possible to continue using the old mirror address. The packages are again up to date for both old and new addresses. The new version of **mirrorlist-m** package has this covered.
 - 2020-03-03: New mirror address is https://github.com/manuel-192/$repo/raw/master/repo. This is already updated in the **mirrorlist-m** package. Old address still exists, but is already outdated.
@@ -24,20 +25,18 @@ Name | Purpose | Link | Special remarks
 m-more | Selection of AUR packages and more | [m-more](../../../m-more) | -
 m-m | Packages created by Manuel | [m-m](../../../m-m) | -
 
-The following three steps
+The following steps
 1. edit /etc/pacman.conf
 2. install a gpg key
 3. update system
+4. install mirrorlist-m
+5. final touch
 
-show you how to start using the repos.<br><br>
-Note: you can now use a small script to add Manuel's repositories to your system:
-<pre>
-wget -q https://github.com/manuel-192/m-more/raw/master/PKGBUILDs/mirrorlist-m/install-mirrorlist
-bash install-mirrorlist
-</pre>
+are needed to start using the repos.
 
 ## Edit /etc/pacman.conf
-Add all (or a selection) of the following repo definitions:
+Add all (or a selection) of the following repo definitions (note the comment character '#'
+at the beginning of the **Include** lines - it will be removed in the last step):
 ```
 # Place the following repo definitions preferably in the end of the file since these packages
 # shouldn't conflict with other repos.
@@ -45,11 +44,13 @@ Add all (or a selection) of the following repo definitions:
 # Selection of prebuilt AUR packages and more:
 [m-more]
 SigLevel = Required
+#Include = /etc/pacman.d/mirrorlist-m
 Server = https://github.com/manuel-192/$repo/releases/download/$arch
 
 # Packages created and published by Manuel:
 [m-m]
 SigLevel = Required
+#Include = /etc/pacman.d/mirrorlist-m
 Server = https://github.com/manuel-192/$repo/releases/download/$arch
 ```
 ## Add the maintainer's gpg key to your system
@@ -62,14 +63,30 @@ sudo pacman-key --lsign-key A1F1B5187D25904B
 You should see token **manuel-192** inside the output of the these last commands.
 If not, check that the added key was correct.
 
-That's it! The hard part is done, and now the new repos are available for your package manager.
-
 ## Update your system
-Last but not least, update your repos and packages:
+Update your repos and packages:
 ```
 sudo pacman -Syyu
 ```
-This command should show also the new package database files that you added.
+This command should also show the new package database files that you added.
+
+## Install mirrorlist-m
+```
+sudo pacman -S mirrorlist-m
+```
+## Final touch
+Remove the comment character (#) from the Include line(s) as noted above.<br>
+Also, you may want to remove the **Server** line for the [m-m] and [m-more].<br>
+Then both repos should have lines looking like this:
+```
+SigLevel = Required
+Include = /etc/pacman.d/mirrorlist-m
+```
+Then update again:
+```
+sudo pacman -Syy
+```
+
 ## Troubleshooting
 In case of any error, please check that you have copied the repo definitions exactly as they are above. And check that the installed gpg key was correct.<br>
 You can see what gpg keys you have installed with:
