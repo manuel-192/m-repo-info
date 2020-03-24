@@ -1,6 +1,7 @@
 # Instructions for using Manuel's repos
 
 ## Latest changes
+- 2020-03-24: The new mirror address is https://github.com/manuel-192/$repo/raw/master/repo is deprecated and will be removed soon. Address https://github.com/manuel-192/$repo/releases/download/$arch still works and will work.
 - 2020-03-10: New development in github tools made it possible to continue using the old mirror address. The packages are again up to date for both old and new addresses. The new version of **mirrorlist-m** package has this covered.
 - 2020-03-03: New mirror address is https://github.com/manuel-192/$repo/raw/master/repo. This is already updated in the **mirrorlist-m** package. Old address still exists, but is already outdated.
 - 2020-03-03: **SigLevel** for Manuel's repos is now recommended to be set to **Required**.
