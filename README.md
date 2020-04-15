@@ -1,6 +1,7 @@
 # Instructions for using Manuel's repos
 
 ## Latest changes
+- 2020-04-15: **IMPORTANT**: In your file **/etc/pacman.conf** you **must** change repo [m-more] to **[m-more2]** due to the repo move operation today.
 - 2020-03-28: Repo address https://github.com/manuel-192/$repo/raw/master/repo is removed now. Please use the **mirrorlist-m** package as instructed below!
 - 2020-03-24: Updated the instruction below, please check them! IMPORTANT: If you don't have package **mirrorlist-m** installed, please install it as instructed!
 - 2020-03-24: The new mirror address is https://github.com/manuel-192/$repo/raw/master/repo is deprecated and will be removed soon. Address https://github.com/manuel-192/$repo/releases/download/$arch still works and will work.
