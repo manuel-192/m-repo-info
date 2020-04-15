@@ -2,7 +2,7 @@
 
 ## Important changes
 Date | Description
---- | :---
+:--- | :---
 2020-04-15 | In your file **/etc/pacman.conf** you **must** change repo **[m-more]** to **[m-more2]** due to the repo move operation today.
 2020-03-28 | Repo addresses have been changed. Please install the **mirrorlist-m** package as instructed below!
 
