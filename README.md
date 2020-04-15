@@ -3,7 +3,6 @@
 ## Important changes
 - 2020-04-15: In your file **/etc/pacman.conf** you **must** change repo **[m-more]** to **[m-more2]** due to the repo move operation today.
 - 2020-03-28: Repo addresses have been changed. Please install the **mirrorlist-m** package as instructed below!
-- 2020-03-03: **SigLevel** for Manuel's repos is now recommended to be set to **Required**.
 
 ## Overview
 Currently there are the following repos available:
