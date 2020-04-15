@@ -8,16 +8,6 @@
 - 2020-03-10: New development in github tools made it possible to continue using the old mirror address. The packages are again up to date for both old and new addresses. The new version of **mirrorlist-m** package has this covered.
 - 2020-03-03: New mirror address is https://github.com/manuel-192/$repo/raw/master/repo. This is already updated in the **mirrorlist-m** package. Old address still exists, but is already outdated.
 - 2020-03-03: **SigLevel** for Manuel's repos is now recommended to be set to **Required**.
-- 2019-11-18: Manuel's repos can now be added with a script, see the <b>Overview</b> below.
-- 2019-08-29: IMPORTANT: Renamed repo server addresses so that the "assets" word in the end is now "$arch".
-- 2019-08-05: Repo [antergos-m] has moved to [m-m].
-- 2019-08-04: Antergos users may find a new home at https://endeavouros.com. Many Antergos users have already moved there.
-- 2019-08-04: IMPORTANT: repos are now under construction due to Antergos shutdown.
-  This means any repo can be changed to another place or even be totally removed.
-  Please continue looking at this page for more info in the near future!
-- 2019-07-29: IMPORTANT: changed SigLevel of each repo from **Required** to **PackageRequired**.<br>
-  You MUST make the same change in your /etc/pacman.conf.<br>
-  This was due to inadequate support from pacman for database signatures.
 
 ## Overview
 Currently there are the following repos available:
