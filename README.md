@@ -13,7 +13,8 @@ Currently there are the following repos available:
 
 Name | Purpose | Link | Special remarks
 ---- | ------- | ---- | ---------------
-m-more2 | Selection of AUR packages and more | [m-more2](../../../m-more2) | Moved from [m-more] at 2020-Apr-15!
+m-aur | Selection of AUR packages | [m-aur](../../../m-aur) | New repo.
+m-more2 | Additional open source packages | [m-more2](../../../m-more2) | Moved from [m-more2] at 2020-Apr-15!
 m-m | Packages created by Manuel | [m-m](../../../m-m) | -
 
 The following steps
@@ -32,8 +33,14 @@ at the beginning of the **Include** lines - it will be removed in the last step)
 # Place the following repo definitions preferably in the end of the file since these packages
 # shouldn't conflict with other repos.
 
-# Selection of prebuilt AUR packages and more:
+# Additional open source packages:
 [m-more2]
+SigLevel = Required
+#Include = /etc/pacman.d/mirrorlist-m
+Server = https://github.com/manuel-192/$repo/releases/download/$arch
+
+# Selection of prebuilt AUR packages:
+[m-aur]
 SigLevel = Required
 #Include = /etc/pacman.d/mirrorlist-m
 Server = https://github.com/manuel-192/$repo/releases/download/$arch
@@ -67,7 +74,7 @@ sudo pacman -S mirrorlist-m
 ```
 ## Final touch
 Remove the comment character (#) from the Include line(s) as noted above.<br>
-Also, you *should* remove the **Server** line for the [m-m] and [m-more2].<br>
+Also, you *should* remove the **Server** line for the [m-m], [m-aur] and [m-more2].<br>
 Then both repos should have lines looking like this:
 ```
 SigLevel = Required
