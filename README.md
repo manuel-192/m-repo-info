@@ -17,6 +17,7 @@ m-m | Packages created by Manuel | [m-m](../../../m-m) | -
 m-more2 | Additional open source packages | [m-more2](../../../m-more2) | Moved from [m-more] at 2020-Apr-15!
 m-aur | Selection of AUR packages | [m-aur](../../../m-aur) | New repo.
 
+### Usage
 The following steps
 1. edit /etc/pacman.conf
 2. install a gpg key
@@ -26,7 +27,7 @@ The following steps
 
 are needed to start using the repos. Details are below.
 
-## Edit /etc/pacman.conf
+### Edit /etc/pacman.conf
 Add all (or a selection) of the following repo definitions (note the comment character '#'
 at the beginning of the **Include** lines - it will be removed in the last step):
 ```
@@ -51,7 +52,7 @@ SigLevel = Required
 #Include = /etc/pacman.d/mirrorlist-m
 Server = https://github.com/manuel-192/$repo/releases/download/$arch
 ```
-## Add the maintainer's gpg key to your system
+### Add the maintainer's gpg key to your system
 but only if you trust the maintainer and these packages!<br><br>
 Run the following commands (unless you haven't already done so):
 ```
@@ -61,18 +62,18 @@ sudo pacman-key --lsign-key A1F1B5187D25904B
 You should see token **manuel-192** inside the output of the these last commands.
 If not, check that the added key was correct.
 
-## Update your system
+### Update your system
 Update your repos and packages:
 ```
 sudo pacman -Syyu
 ```
 This command should also show the new package database files that you added.
 
-## Install mirrorlist-m
+### Install mirrorlist-m
 ```
 sudo pacman -S mirrorlist-m
 ```
-## Final touch
+### Final touch
 Remove the comment character (#) from the Include line(s) as noted above.<br>
 Also, you *should* remove the **Server** line for the [m-m], [m-aur] and [m-more2].<br>
 Then both repos should have lines looking like this:
