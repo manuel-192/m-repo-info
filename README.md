@@ -17,7 +17,7 @@ m-m | Packages created by Manuel | [m-m](../../../m-m) | -
 m-more2 | Additional open source packages | [m-more2](../../../m-more2) | Moved from [m-more] at 2020-Apr-15!
 m-aur | Selection of AUR packages | [m-aur](../../../m-aur) | New repo.
 
-### Usage
+## Steps
 The following steps
 1. edit /etc/pacman.conf
 2. install a gpg key
