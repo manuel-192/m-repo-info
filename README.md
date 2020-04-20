@@ -9,7 +9,7 @@ Date | Description
 2020.Mar.28 | Repo addresses have been changed. Please install the **mirrorlist-m** package as instructed below!
 
 ## Overview
-Currently there are the following repos available:
+Currently the following repos are available:
 
 Name | Purpose | Link | Special remarks
 ---- | ------- | ---- | ---------------
