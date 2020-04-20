@@ -27,7 +27,7 @@ The following steps
 
 are needed to start using the repos. Details are below.
 
-### Edit /etc/pacman.conf
+### 1. Edit /etc/pacman.conf
 Add all (or a selection) of the following repo definitions (note the comment character '#'
 at the beginning of the **Include** lines - it will be removed in the last step):
 ```
