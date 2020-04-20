@@ -24,7 +24,7 @@ The following steps
 4. install mirrorlist-m
 5. final touch
 
-are needed to start using the repos.
+are needed to start using the repos. Details are below.
 
 ## Edit /etc/pacman.conf
 Add all (or a selection) of the following repo definitions (note the comment character '#'
