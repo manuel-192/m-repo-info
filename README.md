@@ -33,8 +33,8 @@ at the beginning of the **Include** lines - it will be removed in the last step)
 # Place the following repo definitions preferably in the end of the file since these packages
 # shouldn't conflict with other repos.
 
-# Additional open source packages:
-[m-more2]
+# Packages created and published by Manuel:
+[m-m]
 SigLevel = Required
 #Include = /etc/pacman.d/mirrorlist-m
 Server = https://github.com/manuel-192/$repo/releases/download/$arch
@@ -45,8 +45,8 @@ SigLevel = Required
 #Include = /etc/pacman.d/mirrorlist-m
 Server = https://github.com/manuel-192/$repo/releases/download/$arch
 
-# Packages created and published by Manuel:
-[m-m]
+# Additional open source packages:
+[m-more2]
 SigLevel = Required
 #Include = /etc/pacman.d/mirrorlist-m
 Server = https://github.com/manuel-192/$repo/releases/download/$arch
