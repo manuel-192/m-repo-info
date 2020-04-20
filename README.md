@@ -52,7 +52,7 @@ SigLevel = Required
 #Include = /etc/pacman.d/mirrorlist-m
 Server = https://github.com/manuel-192/$repo/releases/download/$arch
 ```
-### Add the maintainer's gpg key to your system
+### 1. Add the maintainer's gpg key to your system
 but only if you trust the maintainer and these packages!<br><br>
 Run the following commands (unless you haven't already done so):
 ```
