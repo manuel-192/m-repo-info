@@ -52,7 +52,7 @@ SigLevel = Required
 #Include = /etc/pacman.d/mirrorlist-m
 Server = https://github.com/manuel-192/$repo/releases/download/$arch
 ```
-### 1. Add the maintainer's gpg key to your system
+### 2. Add the maintainer's gpg key to your system
 but only if you trust the maintainer and these packages!<br><br>
 Run the following commands (unless you haven't already done so):
 ```
@@ -62,18 +62,18 @@ sudo pacman-key --lsign-key A1F1B5187D25904B
 You should see token **manuel-192** inside the output of the these last commands.
 If not, check that the added key was correct.
 
-### Update your system
+### 3. Update your system
 Update your repos and packages:
 ```
 sudo pacman -Syyu
 ```
 This command should also show the new package database files that you added.
 
-### Install mirrorlist-m
+### 4. Install mirrorlist-m
 ```
 sudo pacman -S mirrorlist-m
 ```
-### Final touch
+### 5. Final touch
 Remove the comment character (#) from the Include line(s) as noted above.<br>
 Also, you *should* remove the **Server** line for the [m-m], [m-aur] and [m-more2].<br>
 Then both repos should have lines looking like this:
