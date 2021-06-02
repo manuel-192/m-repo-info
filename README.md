@@ -39,19 +39,19 @@ at the beginning of the **Include** lines - it will be removed in the last step)
 [m-m]
 SigLevel = Required
 #Include = /etc/pacman.d/mirrorlist-m
-Server = https://github.com/manuel-192/$repo/releases/download/$arch
+Server = https://raw.githubusercontent.com/manuel-192/$repo/master/repo
 
 # Selection of prebuilt AUR packages:
 [m-aur]
 SigLevel = Required
 #Include = /etc/pacman.d/mirrorlist-m
-Server = https://github.com/manuel-192/$repo/releases/download/$arch
+Server = https://raw.githubusercontent.com/manuel-192/$repo/master/repo
 
 # Additional open source packages:
 [m-more2]
 SigLevel = Required
 #Include = /etc/pacman.d/mirrorlist-m
-Server = https://github.com/manuel-192/$repo/releases/download/$arch
+Server = https://raw.githubusercontent.com/manuel-192/$repo/master/repo
 ```
 ### 2. Add the maintainer's gpg key to your system
 but only if you trust the maintainer and these packages!<br><br>
