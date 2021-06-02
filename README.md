@@ -3,9 +3,10 @@
 ## Important changes
 Date | Description
 :--- | :---
+2021.Jun.02 | IMPORTANT: Manual intervention is required because repo locations had to be changed<br>after pacman v6. See **New repo settings at 2021-Jun-02** below.
 2020.Apr.20 | Moved AUR packages from repo [m-more2] to a new repo [m-aur].
 2020.Apr.20 | Moved package source of mirrorlist-m to repo [m-m] from repo [m-more2].
-2020.Apr.15 | In your file **/etc/pacman.conf** you **must** change repo **[m-more]** to **[m-more2]** due to the repo move operation today.
+2020.Apr.15 | In your file **/etc/pacman.conf** you **must** change repo **[m-more]** to **[m-more2]** due to<br>the repo move operation today.
 2020.Mar.28 | Repo addresses have been changed. Please install the **mirrorlist-m** package as instructed below!
 
 ## Overview
@@ -98,3 +99,29 @@ You may write to https://forum.endeavouros.com about any issues with these repos
 guaranteeing the safety of these packages.
 I build and sign (using name <i>manuel-192</i>) them,
 and transfer them here using the best safety practices I know of.
+
+## New repo settings at 2021-Jun-02
+
+### New contents of `/etc/pacman.d/mirrorlist-m` (replaces the old contents):
+
+```
+### Manuel's mirror list ###
+
+Server = https://raw.githubusercontent.com/manuel-192/$repo/master/repo
+```
+
+### New definitions for Manuel's repos in `/etc/pacman.conf` (replaces the old definitions):
+
+```
+[m-m]
+SigLevel = Required
+Include = /etc/pacman.d/mirrorlist-m
+
+[m-aur]
+SigLevel = Required
+Include = /etc/pacman.d/mirrorlist-m
+
+[m-more2]
+SigLevel = Required
+Include = /etc/pacman.d/mirrorlist-m
+```
