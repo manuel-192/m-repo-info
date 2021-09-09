@@ -3,6 +3,7 @@
 ## Important changes
 Date | Description
 :--- | :---
+2021.Sep.09 | IMPORTANT: Please update package `mirrorlist-m` because of repo location change.<br>Otherwise file `/etc/pacman.d/mirrorlist-m` must be changed manually.<br>This change was caused by pacman update to version 6.0.1 that fixed the broken 6.0.0.
 2021.Jun.02 | IMPORTANT: Manual intervention is required because repo locations had to be changed<br>after pacman v6. See **New repo settings at 2021-Jun-02** below.
 2020.Apr.20 | Moved AUR packages from repo [m-more2] to a new repo [m-aur].
 2020.Apr.20 | Moved package source of mirrorlist-m to repo [m-m] from repo [m-more2].
@@ -39,19 +40,19 @@ at the beginning of the **Include** lines - it will be removed in the last step)
 [m-m]
 SigLevel = Required
 #Include = /etc/pacman.d/mirrorlist-m
-Server = https://raw.githubusercontent.com/manuel-192/$repo/master/repo
+Server = https://github.com/manuel-192/$repo/releases/download/$arch
 
 # Selection of prebuilt AUR packages:
 [m-aur]
 SigLevel = Required
 #Include = /etc/pacman.d/mirrorlist-m
-Server = https://raw.githubusercontent.com/manuel-192/$repo/master/repo
+Server = https://github.com/manuel-192/$repo/releases/download/$arch
 
 # Additional open source packages:
 [m-more2]
 SigLevel = Required
 #Include = /etc/pacman.d/mirrorlist-m
-Server = https://raw.githubusercontent.com/manuel-192/$repo/master/repo
+Server = https://github.com/manuel-192/$repo/releases/download/$arch
 ```
 ### 2. Add the maintainer's gpg key to your system
 but only if you trust the maintainer and these packages!<br><br>
